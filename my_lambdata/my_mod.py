@@ -2,8 +2,11 @@
 
 def enlarge(n):
     """
-    Param n is a number
+    Multiply n by a number
+
     Function will enlarge the number
+
+    Multiplier is 100
     """
     return n * 100
 
