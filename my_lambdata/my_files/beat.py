@@ -20,7 +20,7 @@ class Hip_Hop(Beat):
         self.trap_bass = trap_bass
 
     def keys(self):
-        print("I AM PLAYING THE", self.snare, "WITH TRAP BASS", self.trap_bass)
+        print("I AM PLAYING THE", self.snare, "WITH", self.trap_bass)
 
 
 if __name__ == "__main__":
