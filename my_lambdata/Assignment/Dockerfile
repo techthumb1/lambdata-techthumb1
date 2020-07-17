@@ -13,7 +13,6 @@ ENV SHELL=/bin/bash
 RUN apt-get update && \
   apt-get upgrade -y && \
   apt-get install python3-pip curl -y && \
-  pip3 install pipenv
-
-  pip install -i https://test.pypi.org/simple/ beat-maker==1.3
-  pip install pandas
+  pip3 install pipenv && \
+  pip3 install -i https://test.pypi.org/simple/ beat-maker && \
+  pip3 install pandas
