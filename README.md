@@ -8,6 +8,10 @@ Use the package manager for
 pip install -i https://test.pypi.org/simple/ lambdata-dspt6
 to install lambdata.
 
+Use the package manager for 
+pip install -i https://test.pypi.org/simple/ beat-maker
+to install Beat.
+
 ```bash
 pip install lambdata
 ```
@@ -15,20 +19,15 @@ pip install lambdata
 ## Usage
 
 ```py
-from my_lambdata.my_mod import enlarge
+from my_mod import enlarge
 x= 11
 print(enlarge(x))
-```
 
+from my_files.beat import Beat
+from my_files.beat import Hip_Hop
+print(Hip_Hop.keys)
+print(Beat.keys)
 
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
 ```
 
 ## Contributing
