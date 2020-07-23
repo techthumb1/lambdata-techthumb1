@@ -23,14 +23,16 @@ def new_list(list):
     df = df[list]
     return new_list.append(df)
 
-print(new_list)
+    print(new_list)
 
 
 
+'''
 
 
-
-    A helper method for converting a list of database record objects into a list of dictionaries, so they can be returned as JSON
+    A helper method for converting a list of database record objects into a list of dictionaries, 
+    
+    so they can be returned as JSON
 
     Param: database_records (a list of db.Model instances)
 
@@ -43,9 +45,10 @@ print(new_list)
             {"id": 3, "title": "Book 3"},
         ]
 
-'''
+
 df = np.random.random(100)
 
 for k in color:
     rust = df['orange']
     print(k =+ 1)
+'''
