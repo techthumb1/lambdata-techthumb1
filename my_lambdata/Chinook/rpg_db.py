@@ -10,37 +10,32 @@ cursor = connection.cursor()
 print("CURSOR", cursor)
 
 # How many total Characters are there?
-query = """ 
-SELECT 
+query = """ SELECT 
 Count(name)
 FROM charactercreator_character
 """
 
 # How many of each specific subclass?
-query2 = """
-SELECT 
+query2 = """SELECT 
 Count(distinct name)
 FROM charactercreator_character;
 """
 
 # How many total Items?
-query3 = """
-SELECT 
+query3 = """SELECT 
 Count(item_id)
 FROM armory_item
 """
 
 # How many of the Items are weapons? How many are not?
-query4 = """
-SELECT 
+query4 = """SELECT 
 Count(distinct name) as armory_count
 FROM armory_item, armory_weapon
 WHERE item_ptr_id = item_id;
 """
 
 # How many of the Items are weapons? How many are not?
-query5 = """
-SELECT character.name, item.name
+query5 = """SELECT character.name, item.name
 FROM charactercreator_character AS character,
 charactercreator_character_inventory AS inventory,
 armory_item AS item
@@ -51,9 +46,7 @@ LIMIT 20
 
 # How many Weapons does each character have? 
 # (Return first 20 rows) 
-query6 = """
-SELECT 
-c.character_id,
+query6 = """SELECT c.character_id,
       c.name as character_name
 -- ,inv.item_id
 -- ,w.item_ptr_id as weapon_id
@@ -66,8 +59,7 @@ LIMIT (20)
 """
 
 # On average, how many Weapons does each character have?query7 = """
-query7 = """
-Select AVG (weapon_count) as Average_Weapons
+query7 = """Select AVG (weapon_count) as Average_Weapons
 from (
 	SELECT 
 	  c.character_id
