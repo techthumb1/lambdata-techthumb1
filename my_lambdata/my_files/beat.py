@@ -1,6 +1,14 @@
 # beat.py
 
 class Beat():
+    
+    '''Create a simple 4 bar beat.
+
+    Params: Kick, snare, hat, and bass will be starting instruments.
+
+    Returns: A pattern of the instruments in combination.
+    '''
+
     def __init__(self, kick, snare, hat, bass):
         self.kick = kick
         self.snare = snare
@@ -20,7 +28,7 @@ class Hip_Hop(Beat):
         self.trap_bass = trap_bass
 
     def keys(self):
-        print("I AM PLAYING THE", self.snare, "WITH TRAP BASS", self.trap_bass)
+        print("I AM PLAYING THE", self.snare, "WITH", self.trap_bass)
 
 
 if __name__ == "__main__":

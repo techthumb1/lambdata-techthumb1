@@ -3,3 +3,6 @@
 build/
 dist/
 *.egg-info
+acme.py
+acme_test.py
+acme_report.py

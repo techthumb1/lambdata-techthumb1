@@ -28,7 +28,7 @@ class energy():
         return solar
 
 
-print(solar('RD90A6'))
+    print(solar('RD90A6'))
 
 
 

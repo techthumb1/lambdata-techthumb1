@@ -2,7 +2,7 @@
 import pandas
 
 
-def train_val_split(tehst):
+def train_val_split(split):
     """
     Create a pandas dataframe
 
@@ -10,7 +10,7 @@ def train_val_split(tehst):
 
     Train/test 80/20
     """
-    return tehst
+    return split
 
 if __name__ == "__main__":
 
